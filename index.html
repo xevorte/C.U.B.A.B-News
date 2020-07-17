@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita</title>
+
+    <script>
+        alert("Buka Page Category dan Pilih Berita Yang Kamu Mau");
+    </script>
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white"
+        style="border-bottom: 1px solid rgb(202, 202, 202);">
+        <div class="container">
+            <a class="navbar-brand" href="#">C.U.B.A.B News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item unactive mr-3">
+                        <a class="nav-link text-secondary" href="single.html">Berita</a>
+                    </li>
+                    <li class="nav-item unactive mr-3">
+                        <a class="nav-link text-secondary" href="category.html">Category</a>
+                    </li>
+                    <li class="nav-item unactive dropdown mr-3">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu mb-3 mb-lg-0" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://irhamshidiq.github.io">Portfolio</a>
+                            <a class="dropdown-item" href="#">Productly</a>
+                            <a class="dropdown-item" href="#">Travel</a>
+                        </div>
+                    </li>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 bg-light search" type="text" placeholder="Search"
+                            aria-label="Search" style="height: 30px; font-size: 14px; border-radius: 0;"><i
+                            class="fas fa-search text-secondary"
+                            style="float: right; margin-left: -40px; cursor: pointer;"></i>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Akhir Navbar -->
+
+
+    <!-- Header -->
+
+    <section class="header">
+        <div class="container">
+            <div class="row ml-1 ml-lg-0 justify-content-between">
+
+                <div class="col-lg-6 head-1">
+                    <h1 class="mb-4" style="font-family: 'PoppinsB'; font-size: 50px;">Dapatkan Informasi Terbaru
+                        Untuk<br> Hari-Harimu
+                    </h1>
+                    <p class="mb-4">C.U.B.A.B News menyediakan informasi yang ingin kamu
+                        ketahui<br> dan
+                        juga
+                        sedang terjadi di semua negara</p>
+                    <a href="#rekomendasi" class="btn"
+                        style="background-color: orange; color: white; font-family: 'MontserratM';">Berita Terbaru</a>
+                </div>
+
+                <div class="col-lg-5 mt-3">
+                    <figure class="figure head-2">
+                        <img src="img/head.jpg" class="figure-img img-fluid">
+                        <figcaption class="figure-caption">
+
+                            <div class="row mt-3 mb-4 p-1 mr-0 ml-0" style="border: 2px solid rgb(212, 212, 212);">
+                                <div class="col">
+                                    <p>Setelah lama WFH. Akhirnya para<br> pekerja diperbolehkan masuk kantor</p>
+                                </div>
+                                <div class="col-2 align-self-center">
+                                    <img src="img/head-1.jpg" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 mb-4 p-1 mr-0 ml-0" style="border: 2px solid rgb(212, 212, 212);">
+                                <div class="col">
+                                    <p>Semua sudut kantor harus steril dan<br> dijaga kebersihannya</p>
+                                </div>
+                                <div class="col-2 align-self-center">
+                                    <img src="img/head-2.jpg" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 mb-4 p-1 mr-0 ml-0" style="border: 2px solid rgb(212, 212, 212);">
+                                <div class="col">
+                                    <p>Sedia masker untuk menemani aktivitas<br> kesehatan</p>
+                                </div>
+                                <div class="col-2 align-self-center">
+                                    <img src="img/head-3.jpg" class="img-fluid">
+                                </div>
+                            </div>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+            <div class="row ml-1 ml-lg-0 mt-5 mb-2">
+
+                <div class="col-lg-4 mb-4 category">
+                    <img src="img/category-1.jpg" style="cursor: pointer;" class="img-fluid">
+                    <a href="" class="d-flex justify-content-center category-img">
+                        <h3 class="align-self-center">
+                            SPORT</h3>
+                    </a>
+                    <a href="" class="d-flex justify-content-end">
+                        <button class="btn align-self-end category-btn btn-light" type="button">Baca</button>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 mb-4 category">
+                    <img src="img/category-3.jpg" class="img-fluid">
+                    <a href="" class="d-flex justify-content-center category-img">
+                        <h3 class="align-self-center">
+                            TECHNOLOGY</h3>
+                    </a>
+                    <a href="" class="d-flex justify-content-end">
+                        <button class="btn align-self-end category-btn btn-light" type="button">Baca</button>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 mb-4 category">
+                    <img src="img/category-2.jpg" class="img-fluid">
+                    <a href="" class="d-flex justify-content-center category-img">
+                        <h3 class="align-self-center">
+                            TRAVEL</h3>
+                    </a>
+                    <a href="" class="d-flex justify-content-end">
+                        <button class="btn align-self-end category-btn btn-light" type="button">Baca</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="category.html">
+                    <button class="btn btn-category mb-5 text-center">Lihat Lainnya</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Akhir Header -->
+
+
+
+    <!-- Bogor -->
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bogor jumbotron img-fluid p-0 rounded-0">
+                        <div class="isi p-4" style="background-color: rgba(0, 0, 0, 0.7); width: 360px;">
+                            <h1 class="text-white mb-3" style="font-family: 'PoppinsB'; font-size: 70px;">BOGOR<br>
+                                KEMBALI<br>
+                                RAMAI
+                            </h1>
+                            <p class="text-white mb-5" style="font-family: 'PoppinsM';">Para pekerja kini mulai<br>
+                                memadai
+                                jalanan.
+                                Polisi<br> pun memperketat peraturan
+                            </p>
+                            <button class="btn btn-warning" type="button"
+                                style="font-family: 'MontserratM'; color: white;">Baca
+                                Selengkapnya<i class="fas fa-arrow-right ml-2 pt-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bogor jumbotron img-fluid p-0 rounded-0">
+                        <div class="isi p-4" style="background-color: rgba(0, 0, 0, 0.7); width: 360px;">
+                            <h1 class="text-white mb-3" style="font-family: 'PoppinsB'; font-size: 70px;">BOGOR<br>
+                                KEMBALI<br>
+                                RAMAI
+                            </h1>
+                            <p class="text-white mb-5" style="font-family: 'PoppinsM';">Para pekerja kini mulai<br>
+                                memadai
+                                jalanan.
+                                Polisi<br> pun memperketat peraturan
+                            </p>
+                            <button class="btn btn-warning" type="button"
+                                style="font-family: 'MontserratM'; color: white;">Baca
+                                Selengkapnya<i class="fas fa-arrow-right ml-2 pt-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bogor jumbotron img-fluid p-0 rounded-0">
+                        <div class="isi p-4" style="background-color: rgba(0, 0, 0, 0.7); width: 360px;">
+                            <h1 class="text-white mb-3" style="font-family: 'PoppinsB'; font-size: 70px;">BOGOR<br>
+                                KEMBALI<br>
+                                RAMAI
+                            </h1>
+                            <p class="text-white mb-5" style="font-family: 'PoppinsM';">Para pekerja kini mulai<br>
+                                memadai
+                                jalanan.
+                                Polisi<br> pun memperketat peraturan
+                            </p>
+                            <button class="btn btn-warning" type="button"
+                                style="font-family: 'MontserratM'; color: white;">Baca
+                                Selengkapnya<i class="fas fa-arrow-right ml-2 pt-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="caro text-center">
+
+                <i class="fas fa-chevron-left" href="#carouselExampleControls" role="button" data-slide="prev"></i>
+
+                <i class="far fa-circle slidex" data-target="#carouselExampleControls" data-slide-to="0"
+                    class="active"></i>
+                <i class="far fa-circle slidex" data-target="#carouselExampleControls" data-slide-to="1"></i>
+                <i class="far fa-circle slidex" data-target="#carouselExampleControls" data-slide-to="2"></i>
+
+                <i class="fas fa-chevron-right" href="#carouselExampleControls" role="button" data-slide="next"></i>
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Akhir Bogor -->
+
+
+    <!-- Rekomendasi Berita -->
+
+    <div id="rekomendasi"></div>
+    <section class="rekomendasi-berita mb-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="head">REKOMENDASI BERITA</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4 rekomend-kiri">
+                    <div class="card mb-4 border-0 bg-light">
+                        <img src="img/rekomend-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-family: 'PoppinsM';">Aplikasi-Aplikasi Yang
+                                Bermanfaat
+                                Saat Pandemi Covid-19</h5>
+                            <a href="single.html">
+                                <p class="text-primary" style="margin-bottom: -5px; cursor: pointer;">Baca
+                                    Selengkapnya<i class="fas fa-arrow-right ml-2 pt-1 text-primary"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-5 border-0 bg-light">
+                        <img src="img/rekomend-2.jpg" class="card-img-top">
+                        <a href="" class="d-flex justify-content-center rekomend-img">
+                            <i class=" fas fa-play-circle align-self-center" style="font-size: 40px;"></i>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-family: 'PoppinsM';">Tempat Wisata Terbaik Setelah
+                                Selesai<br>
+                                Covid-19
+                            </h5>
+                            <a href="single3.html" class="lihat-video">
+                                <p>Lihat Video<i class="fas fa-arrow-right ml-2 pt-1"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-12">
+
+                    <div class="row mb-4 mx-auto">
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-3.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Macbook Berkolaborasi
+                                        Dengan Windows</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-5.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Konser Musik Dilarang Di
+                                        Mana-Mana</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-4.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Playstation Menuju Era Baru</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 mx-auto">
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-7.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Lamborghini Baru Saja Merilis
+                                        Mobil Baru</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-6.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Sultan Baru Saja Melelang Motor
+                                        Kesayangannya</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-8.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Akibat Covid-19 Banyak Bandara
+                                        Tertunda
+                                    </h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 mx-auto align-items-center">
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-9.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Aksi Demo Kian Ricuh Di Amerika
+                                        Serikat</h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure class="figure" style="cursor: pointer;">
+                                <img src="img/rekomend-10.jpg" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">
+                                    <h6 style="font-family: 'PoppinsM'; color: black;">Perang Di Palestina Semakin
+                                        Parah
+                                    </h6>
+                                    <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Adipisci repellat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-4 text-center">
+                            <button class="btn btn-lainnya px-4">Lihat Lainnya<i
+                                    class="fas fa-arrow-right ml-3"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Akhir Rekomendasi Berita -->
+
+
+    <!-- BERITA LAMPAU -->
+
+    <section class="berita-lampau mb-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="head">BERITA LAMPAU</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-6 mb-4 berita">
+                    <img src="img/berita-lampau-1.jpg" width="100%">
+                    <a href="" class="d-flex justify-content-start berita-img p-2 pl-3">
+                        <h1 class="align-self-start">
+                            TOKO-TOKO<br> KEMBALI BUKA</h1>
+                    </a>
+                    <a href="" class="d-flex justify-content-start">
+                        <button class="btn align-self-center berita-btn btn-light rounded-0"
+                            type="button">Berita</button>
+                    </a>
+                </div>
+                <div class="col-lg-6" style="margin-top: 8px;">
+
+                    <div class="row mb-4">
+                        <div class="col-5 align-self-center">
+                            <img src="img/berita-lampau-2.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7 align-self-center" style="font-family: 'Poppins';">
+                            <h5 class="m-0 mt-3" style="font-family: 'PoppinsM';">
+                                Lifestyle</h5>
+                            <p class="text-secondary" style=" font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ex
+                                magnam esse
+                                totam delectus
+                                voluptas fugit recusandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-5 align-self-center">
+                            <img src="img/berita-lampau-3.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7 align-self-center" style="font-family: 'Poppins';">
+                            <h5 class="m-0 mt-3" style="font-family: 'PoppinsM';">Kesehatan</h5>
+                            <p class="text-secondary" style=" font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ex
+                                magnam esse
+                                totam delectus
+                                voluptas fugit recusandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-5 align-self-center">
+                            <img src="img/berita-lampau-4.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7 align-self-center" style="font-family: 'Poppins';">
+                            <h5 class="m-0 mt-3" style="font-family: 'PoppinsM';">Bisnis</h5>
+                            <p class="text-secondary" style=" font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ex
+                                magnam esse
+                                totam delectus
+                                voluptas fugit recusandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-5 align-self-center">
+                            <img src="img/berita-lampau-5.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7 align-self-center" style="font-family: 'Poppins';">
+                            <h5 class="m-0 mt-3" style="font-family: 'PoppinsM';">Games</h5>
+                            <p class="text-secondary" style=" font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ex
+                                magnam esse
+                                totam delectus
+                                voluptas fugit recusandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-5 align-self-center">
+                            <img src="img/berita-lampau-6.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7 align-self-center" style="font-family: 'Poppins';">
+                            <h5 class="m-0 mt-3" style="font-family: 'PoppinsM';">Movie</h5>
+                            <p class="text-secondary" style=" font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ex
+                                magnam esse
+                                totam delectus
+                                voluptas fugit recusandae.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Akhir BERITA LAMPAU -->
+
+
+    <!-- Email -->
+
+    <div class="jumbotron email img-fluid rounded-0 p-5">
+        <div class="text-center">
+            <h3 class="mb-4 mt-3">Jika kamu ingin mengirimkan berita, kamu bisa kirimkan emailmu</h3>
+            <input type="email" placeholder="Send Your Email" style="height: 47.5px; width: 80%; padding: 10px;">
+            <button type="button" class="btn btn-primary rounded-0 btn-lg"
+                style="margin-top: -6px; margin-left: -7px;"><i class="fas fa-paper-plane"
+                    style="cursor: pointer;"></i></button>
+            <p class="mt-4 container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, molestias quis! Vel,
+                expedita
+                tenetur!
+                Delectus quod soluta accusamus, similique deserunt molestias tempora veniam fugiat atque nulla sit?</p>
+        </div>
+    </div>
+
+    <!-- AKhir Email -->
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="row border-top mb-4 mr-0 px-5 pt-4">
+
+            <div class="col-lg-2 mt-4 mt-lg-0">
+                <h3 class="mb-4">About Us</h3>
+                <p>Account Benefit</p>
+                <p>Privacy Policy</p>
+                <p>Term Of Use</p>
+                <p>C.U.B.A.B Team</p>
+            </div>
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
+                <h3 class="mb-4">More Language</h3>
+
+                <div class="row">
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <p>Indonesia</p>
+                    </div>
+                    <div class="col-lg-7 mt-4 mt-lg-0">
+                        <a href="">INDONESIA</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <p>English</p>
+                    </div>
+                    <div class="col-lg-7 mt-4 mt-lg-0">
+                        <a href="">ENGLISH</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <p>Japanese</p>
+                    </div>
+                    <div class="col-lg-7 mt-4 mt-lg-0">
+                        <a href="">日本</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <p>Rusia</p>
+                    </div>
+                    <div class="col-lg-7 mt-4 mt-lg-0">
+                        <a href="">Россия</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 mt-4 mt-lg-0">
+                <h3 class="mb-4">Join Us</h3>
+                <p>New News</p>
+                <p>Job on C.U.B.A.B</p>
+            </div>
+
+            <div class="col-lg-2 mt-4 mt-lg-0">
+                <h3 class="mb-4">Follow Us</h3>
+                <div class="social d-flex justify-content-between">
+                    <img src="img/fb.png" class="img-fluid" style="width: 20px; height: 20px;">
+                    <img src="img/ig.png" class="img-fluid" style="width: 20px; height: 20px;">
+                    <img src="img/wa.png" class="img-fluid" style="width: 20px; height: 20px;">
+                </div>
+            </div>
+
+            <div class="col-lg-3 mt-5 mt-lg-0 text-center align-self-center">
+                <h2>C.U.B.A.B</h2>
+                <p style="font-size: 11px;">Copyright by C.U.B.A.B 2020 All Right Reserved</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Akhir Footer -->
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>

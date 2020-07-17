@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("font/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PoppinsM";
+    src: url("font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PoppinsB";
+    src: url("font/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratM";
+    src: url("font/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratB";
+    src: url("font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-family: PoppinsB;
+}
+
+.navbar ul li {
+    font-family: 'PoppinsM';
+}
+
+.unactive::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid black;
+    width: 0%;
+    margin: 0 auto;
+    transition: all ease .4s;
+    margin-top: -6px;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background-color: orange;
+}
+
+.unactive:hover::after {
+    content: '';
+    display: block;
+    width: 60%;
+}
+
+.search {
+    font-family: 'Poppins';
+}
+
+/* Header */
+
+.header {
+    margin: 0 16px 0 0;
+}
+
+.header .btn-category {
+    background-color: orange;
+    color: white;
+    font-family: 'PoppinsM';
+    padding: 6px 100px;
+}
+
+.head-1 {
+    margin-top: 170px;
+}
+
+.head-2 {
+    margin-top: 70px;
+}
+
+.head-2 p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: black;
+    font-family: "MontserratM";
+}
+
+/* Category */
+
+.category .category-img {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.category a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.category-btn {
+    color: black;
+    position: absolute;
+    margin: -10px 0 0 -10px;
+    font-family: 'PoppinsM';
+}
+
+/* Bogor */
+
+.bogor {
+    background-image: url(../img/bogor.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 8px 0 -8px;
+}
+
+.slidex {
+    transition-duration: 0.8s;
+    transition-property: transform background-color border-radius;
+}
+
+.slidex:hover {
+    background-color: grey;
+    border-radius: 100px;
+    transform: scale(1.02);
+}
+
+.fa-chevron-left:active {
+    color: greenyellow;
+}
+
+.fa-chevron-right:active {
+    color: greenyellow;
+}
+
+/* Rekomendasi Berita */
+
+.rekomendasi-berita {
+    margin-top: 100px;
+}
+
+.rekomendasi-berita .head,
+.berita-lampau .head {
+    font-family: "MontserratB";
+}
+
+.rekomendasi-berita .head::after,
+.berita-lampau .head::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid orange;
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.rekomend-kiri .rekomend-img {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 175px;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: rgba(39, 39, 39, 0.404);
+}
+
+.rekomendasi-berita .lihat-video {
+    margin-bottom: -5px;
+    cursor: pointer;
+    color: rgb(130, 216, 0);
+}
+
+.rekomendasi-berita .lihat-video:hover {
+    color: rgb(130, 216, 0);
+    text-decoration: underline;
+}
+
+.rekomend-kiri .rekomend-img:hover {
+    opacity: 1;
+}
+
+/* Berita Lampau */
+
+.berita .berita-img {
+    color: white;
+    font-family: 'PoppinsM';
+    position: absolute;
+    top: 100;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.berita a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.berita-btn {
+    color: black;
+    position: absolute;
+    font-family: 'PoppinsM';
+    top: 10px;
+    left: 22px;
+    font-family: 'PoppinsB';
+}
+
+/* Email */
+
+.email {
+    background-image: url(../img/email.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.email h3 {
+    font-family: "MontserratB";
+    color: white;
+}
+
+.email p {
+    font-family: "MontserratM";
+    color: white;
+}
+
+/* Footer */
+
+.footer h3,
+.footer h2 {
+    font-family: 'PoppinsB';
+}
+
+.footer p,
+.footer a {
+    font-family: 'PoppinsM';
+    cursor: pointer;
+}
+
+
+/* Single Page */
+.main {
+    margin-top: 120px;
+}
+
+.head h4 {
+    font-family: 'Poppins';
+}
+
+.head h2 {
+    font-family: 'PoppinsM';
+}
+
+.head p {
+    color: gray;
+}
+
+.head .btn-sosmed {
+    padding: 6px 20px;
+}
+
+.main .btn-fb {
+    background-color: lightgray;
+    color: royalblue;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.main .btn-fb:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.main .btn-twt {
+    background-color: lightgray;
+    color: rgb(0, 183, 255);
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.main .btn-twt:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+.main .btn-linked {
+    background-color: lightgray;
+    color: gray;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.main .btn-linked:hover {
+    background-color: gray;
+    color: white;
+}
+
+.body {
+    font-family: Arial;
+}
+
+.body span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.body h3 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.body p {
+    font-size: 14px;
+}
+
+.body .btn-sosmed {
+    padding: 6px 12px;
+    border-radius: 100px;
+}
+
+.body .btn-fb {
+    padding: 6px 15px;
+}
+
+.sidebar {
+    margin-top: -120px;
+}
+
+.rekomendasi-berita h4 {
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.rekomendasi-berita .btn-lainnya {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 6px;
+    font-family: 'PoppinsM';
+}
+
+.travel h5 {
+    font-size: 20px;
+    font-family: 'MontserratM';
+    margin-bottom: 20px;
+}
+
+.travel h4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid orange;
+    padding-bottom: 4px;
+    margin: auto;
+    width: 16%;
+}
+
+.travel .rekomend-img {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 131px;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: rgba(39, 39, 39, 0.404);
+}
+
+.travel .rekomend-img:hover {
+    opacity: 1;
+}
+
+.travel a,
+.sports a,
+.health a {
+    color: orange;
+}
+
+.travel a:hover,
+.sports a:hover,
+.health a:hover {
+    color: orange;
+}
+
+.sports h5 {
+    font-size: 20px;
+    font-family: 'MontserratM';
+    margin-bottom: 20px;
+}
+
+.sports h4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid orange;
+    padding-bottom: 4px;
+    margin: auto;
+    width: 16%;
+}
+
+.health h5 {
+    font-size: 20px;
+    font-family: 'MontserratM';
+    margin-bottom: 20px;
+}
+
+.health h4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid orange;
+    padding-bottom: 4px;
+    margin: auto;
+    width: 16%;
+}
+
+
+/* Category Page */
+.category-page {
+    margin-top: 100px;
+}
+
+
+@media (max-width: 960px) {
+    .head-1 {
+        margin-top: 100px;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+
+    .unactive::after {
+        content: '';
+        display: block;
+        border-bottom: none;
+        width: 0%;
+        margin: 0;
+        transition: all ease .4s;
+        margin-top: -6px;
+    }
+
+    .sidebar {
+        margin-top: -90px;
+    }
+}
